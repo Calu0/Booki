@@ -2,13 +2,12 @@ body {
   font-family: "Raleway", sans-serif;
   width:1400px;
   margin:auto;
-  height:auto;
+  
 }
 
 #logo {
   width: 61.09px;
   height: 19px;
-  margin-top: 44px;
  
 }
 #logo:hover {
@@ -16,8 +15,10 @@ body {
   opacity:1;
 }
 
-.navlogo{
- 
+.navLogo{
+  margin: 44px 0px 63px 0px;
+  display:flex;
+  justify-content: space-between;
 }
 
 
@@ -32,7 +33,7 @@ body {
   color: #0065fc;
   text-decoration: none;
   border-top: 2px solid #0065fc;
-  padding-top: 30px;
+  padding-top: 42px;
   margin: 20px;
 }
 
@@ -40,7 +41,7 @@ body {
   color: #0065fc;
   text-decoration: none;
   border-top: 2px solid #0065fc;
-  padding-top: 30px;
+  padding-top: 42px;
   margin: 20px;
 }
 
@@ -96,6 +97,7 @@ body {
 
 .search-bar {
   display: flex;
+  margin-bottom: 31px;
 }
 
 #search-text {
@@ -130,14 +132,16 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding:4px 20px;
-  justify-content: space-between;
-  width: 1200px;
+  justify-content:flex-start;
+  margin: auto;
+
 }
+
 
 #filtretitle {
   
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   padding: 20px
 }
 
@@ -155,7 +159,7 @@ filtresAttribut {
   word-spacing: 5px;
   cursor: pointer;
   margin: 20px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 18px 0px 18px;
   font-weight: 700;
   font-size: 16px;
 }
@@ -165,22 +169,35 @@ filtresAttribut {
 }
 
 
-
-
-
-
-
-
-
-
+.info {
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  padding:10px;
+  margin:28px 0px 10px 0px;
+  text-align: center;
+  
+}
+.fa-info {
+  border: 1px solid #D9D9D9;
+  border-radius: 100%;
+  width: 24px; 
+  line-height: 24px;
+  text-align: center;
+  margin-right:2%;
+  font-size:12px;
+}
+/*info*/
 
 
 /*Hebergement à marseille*/
 
 .home {
   
-  Width:1144px;
-  Height:813.8px;
+  Width:880px;
+  Height:626px;
   background-color: #D9D9D9;
   border-radius: 20px ;
   display:flex;
@@ -191,21 +208,22 @@ filtresAttribut {
 }
 
 
-#home h2 {
-  max-width:100%;
-  height:auto;
+.home h2 {
+  font-size:22px;
+  font-weight: 700;
   align-self: flex-start;
-  
+  margin: 42px 562px 23px 40px;
 }
 
 
 #Cannebiere , #HotelDuPort , #HotelMouettes , #HotelMer , #AubergePanier , #HotelAmina  {
 
-  width:319.8px;
-  height:258.7px;
+  width:246px;
+  height:199px;
   overflow:auto;
   background-color: #FFF;
-  border-radius: 20px 20px;
+  border-radius: 20px;
+  
   margin:20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
