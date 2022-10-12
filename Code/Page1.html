@@ -18,17 +18,17 @@
   <body>
     <main>
       <header>
-        <div>
+        <div class="navLogo">
           <a href="Page1.html" target="_self">
             <img src="images/logo/Booki.png" id="logo" />
           </a>
-        </div>
+        
 
         <nav class="nav-main">
           <a href="#home" class="nav-home">Hébergements</a>
           <a href="#activity" class="nav-activity">Activités</a>
         </nav>
-
+      </div>
         <div id="title">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
@@ -52,50 +52,31 @@
             </button>
           </form>
 
-          <div class="filtre">
-            <form class="filtre">
-              Filtres
-              <input
-                type="checkbox"
-                id="Économique"
-                name="Économique"
-                value="Économique"
-              />
-              <label for="Économique">
-                <i class="fa-solid fa-money-bill-wave"></i>
-                Économique
-              </label>
-              <input
-                type="checkbox"
-                id="Familial"
-                name="Familial"
-                value="Familial"
-              />
-              <label for="Familial">
-                <i class="fa-solid fa-child-reaching"></i>
-                Familial
-              </label>
-              <input
-                type="checkbox"
-                id="Romantique"
-                name="Romantique"
-                value="Romantique"
-              />
-              <label for="Romantique">
-                <i class="fa-solid fa-heart"></i>
-                Romantique
-              </label>
-              <input
-                type="checkbox"
-                id="Animaux autorisés"
-                name="Animaux autorisés"
-                value="Animaux autorisés"
-              />
-              <label for="Animaux autorisés">
-                <i class="fa-solid fa-dog"></i>
-                Animaux autorisés
-              </label>
-            </form>
+          <div class="filtres">
+            
+              <p id="filtretitle">Filtres</p>
+              
+                <button>
+                <p class="filtresAttribut"><i class="fa-solid fa-money-bill-wave"></i>
+                Économique</p>
+                </button>
+               
+             
+                <button>
+                <p class="filtresAttribut"><i class="fa-solid fa-child-reaching"></i>
+                Familial</p>
+                </button>
+           
+              
+                <button>
+                <p class="filtresAttribut"><i class="fa-solid fa-heart"></i>
+                Romantique</p></button>
+             
+                <button>
+                <p class="filtresAttribut"><i class="fa-solid fa-dog"></i>
+                Animaux autorisés</p></button>
+              
+           
           </div>
 
           <div class="info">
@@ -107,12 +88,14 @@
 
       <section class="home" id="home">
         <h2>Hébergement à Marseille</h2>
+        <div id="Cannebiere">
         <a href="#" target="_self">
           <img
             src="images/hebergements/3_medium/aubergecannebiere.jpg"
             alt="Auberge La Cannebière"
           />
         </a>
+        <span class="TextHotel">
         <h3 class="hotelName">Auberge La Cannebière</h3>
         <p class="nightPrice">Nuit à partir de 25€</p>
         <i class="fa-solid fa-star"></i>
@@ -120,12 +103,21 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
+      </span>
+      </div>
+
+
+
+
+      <div id="HotelDuPort">
         <a href="#" target="_self">
           <img
             src="images/hebergements/3_medium/hotelduport.jpg"
             alt="Hôtel du port"
+            div="imghotel"
           />
         </a>
+        <span class="TextHotel">
         <h3 class="hotelName">Hôtel du port</h3>
         <p class="nightPrice">Nuit à partir de 52€</p>
         <i class="fa-solid fa-star"></i>
@@ -133,12 +125,16 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
+      </span> 
+        </div>
+        <div id="HotelMouettes">
         <a href="#" target="_self">
           <img
             src="images/hebergements/3_medium/lesmouettes.jpg"
             alt="Hôtel les mouettes"
           />
         </a>
+        <span class="TextHotel">
         <h3 class="hotelName">Hôtel les mouettes</h3>
         <p class="nightPrice">Nuit à partir de 76€</p>
         <i class="fa-solid fa-star"></i>
@@ -146,12 +142,16 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
+      </span>
+      </div>
+      <div id="HotelMer">
         <a href="#" target="_self">
           <img
             src="images/hebergements/3_medium/delamer.jpg"
             alt="Hôtel de la Mer"
           />
         </a>
+        <span class="TextHotel">
         <h3 class="hotelName">Hôtel de la Mer</h3>
         <p class="nightPrice">Nuit à partir de 46€</p>
         <i class="fa-solid fa-star"></i>
@@ -159,12 +159,16 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
+      </span>
+        </div>
+        <div id="AubergePanier">
         <a href="#" target="_self">
           <img
             src="images/hebergements/3_medium/panier.jpg"
             alt="Auberge Le Panier"
           />
         </a>
+        <span class="TextHotel">
         <h3 class="hotelName">Auberge Le Panier</h3>
         <p class="nightPrice">Nuit à partir de 23€</p>
         <i class="fa-solid fa-star"></i>
@@ -172,12 +176,16 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
+      </span>
+        </div>
+        <div id="HotelAmina">
         <a href="#" target="_self">
           <img
             src="images/hebergements/3_medium/amina.jpg"
             alt="Hôtel chez Amina"
           />
         </a>
+        <span class="TextHotel">
         <h3 class="hotelName">Hôtel chez Amina</h3>
         <p class="nightPrice">Nuit à partir de 96€</p>
         <i class="fa-solid fa-star"></i>
@@ -185,10 +193,12 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
+        </span>
+        </div>
         <a href="#">Afficher Plus</a>
       </section>
 
-      <section class="home2">
+      <aside class="home2">
         <h4>
           Les plus populaires
           <i class="fa-solid fa-star"></i>
@@ -232,7 +242,7 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
-      </section>
+      </aside>
 
       <section class="activity" id="activity">
         <h5 class="activityTitle">Activités à Marseille</h5>
