@@ -1,30 +1,28 @@
 body {
   font-family: "Raleway", sans-serif;
-  width:1400px;
-  margin:auto;
-  
+  width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 #logo {
   width: 61.09px;
   height: 19px;
- 
 }
 #logo:hover {
   transform: scale(1.05);
-  opacity:1;
+  opacity: 1;
 }
 
-.navLogo{
+.navLogo {
   margin: 44px 0px 63px 0px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
-
 /*icon*/
 .fa-solid {
-  color: #0065FC;
+  color: #0065fc;
 }
 /*icon*/
 
@@ -73,16 +71,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin-bottom: -6px;
-  
-
 }
 
 #title p {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-
-
 }
 /*Title*/
 
@@ -127,27 +121,23 @@ body {
 
 /*Filtres*/
 .filtres {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding:4px 20px;
-  justify-content:flex-start;
+  padding: 4px 20px;
+  justify-content: flex-start;
   margin: auto;
-
 }
-
 
 #filtretitle {
-  
   font-weight: 700;
   font-size: 18px;
-  padding: 20px
+  padding: 20px;
 }
-
 
 .filtres button {
   background-color: white;
-  border: 2px solid #D9D9D9;
+  border: 2px solid #d9d9d9;
   border-radius: 40px;
   word-spacing: 5px;
   cursor: pointer;
@@ -158,99 +148,86 @@ body {
 }
 
 .filtres button:hover {
-  background-color: #DEEBFF;
+  background-color: #deebff;
 }
 /*Filtres*/
 
-
 /*info*/
 .info {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content: flex-start;
   font-weight: 400;
   font-size: 16px;
-  padding:10px;
-  margin:28px 0px 10px 0px;
+  padding: 10px;
+  margin: 28px 0px 10px 0px;
   text-align: center;
-  
 }
 .fa-info {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 100%;
-  width: 24px; 
+  width: 24px;
   line-height: 24px;
   text-align: center;
-  margin-right:2%;
-  font-size:12px;
+  margin-right: 2%;
+  font-size: 12px;
 }
 /*info*/
 
-
 .homePopularFlex {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-
 /*Hebergement à marseille*/
 
 .home {
-  
-  Width:880px;
-  Height:626px;
-  background-color: #D9D9D9;
-  border-radius: 20px ;
-  display:flex;
+  width: 880px;
+  height: 626px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  display: flex;
   flex-wrap: wrap;
-  overflow:auto;
+  overflow: auto;
   justify-content: space-around;
   flex-direction: row;
 }
 
-
 .home h2 {
-  font-size:22px;
+  font-size: 22px;
   font-weight: 700;
   align-self: flex-start;
   margin: 42px 562px -15px 40px;
 }
 
-
-.hotel  {
-
-  width:246px;
-  height:199px;
-  background-color: #FFF;
+.hotel {
+  width: 246px;
+  height: 199px;
+  background-color: #fff;
   border-radius: 20px;
   border: 5px 5px 0px 5px solid white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
 }
 
 .hotel img {
-
-  
   width: 246px;
   height: 124px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-  
 }
 
-.hotel h3{
-  font-size:16px;
+.hotel h3 {
+  font-size: 16px;
   font-weight: 700;
   margin: 4px 26px 5px 16px;
 }
 
-.hotel p{
+.hotel p {
   font-size: 14px;
   font-weight: 400;
   margin: 0px 26px 7px 16px;
 }
-
 
 .iconStar {
   display: flex;
@@ -261,22 +238,16 @@ body {
   font-size: 12px;
 }
 
-
 .TextHotel {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction:column ;
-
+  flex-direction: column;
 }
 
-
-
 #afficherPlus {
-  
   font-size: 18px;
   font-weight: 700;
   margin: 0px 729px 10px 44px;
-  
 }
 
 #afficherPlus:link {
@@ -284,71 +255,86 @@ body {
   text-decoration: none;
 }
 
-
 #afficherPlus:visited {
   color: black;
   text-decoration: none;
-  
 }
 
 /*Hebergement à marseille*/
 
-
-
 /*MostPopular*/
 
 .homePopular {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  background-color: #D9D9D9;
-  border-radius: 20px ;
+  background-color: #d9d9d9;
+  border-radius: 20px;
   width: 420px;
   height: 625px;
   flex-wrap: wrap;
   overflow: auto;
+  justify-content: center;
 }
 
-.PopularTitle{
+.PopularTitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .homePopular h4 {
-  
   margin: 41px 66px 26px 37px;
   font-size: 22px;
   font-weight: 700;
-  
-  
 }
 
 .fa-chart-line {
-  Width:18px;
-  height:15.75px;
+  width: 18px;
+  height: 15.75px;
   margin: 46px 42px 31.25px;
 }
 
-
 .PopularHotelflex {
-  overflow: auto;
-  width:343px;
-  height:144px;
+  width: 343px;
+  height: 144px;
   background-color: white;
+  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 10px 10px 10px 10px;
   display: flex;
   flex-direction: row;
-  
-  
 }
 
 .homePopular img {
-  border: 1px solid white;
-  width:137px;
-  height:144px;
+  width: 137px;
+  height: 144px;
   object-fit: cover;
+}
 
+.homePopular h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px 20px 7px 15px;
+  
+}
+
+.textPopular {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.textPopular p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 0px 0px 15px;
+  flex:1;
+}
+
+.popularIcon {
+  font-size: 12px;
+  
+  margin: 16px 0px 12px 15px;
 }
 /*Most Popular*/
 
@@ -357,36 +343,34 @@ body {
 .activity {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .activity h5 {
   font-size: 22px;
   font-weight: 700;
   overflow: auto;
-  margin: 60px 1148px 18.47px 50px;
+  margin: 60px 1148px 18.47px 0px;
 }
 
 .activity p {
   font-size: 16px;
   font-weight: 700;
+  margin-left: 16px;
 }
-
 
 .activityFlex {
   width: 302px;
   height: 444.51px;
-  object-fit: cover;
   overflow: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .activity img {
+  width: 302px;
+  height: 389px;
   object-fit: cover;
 }
 /*Activity*/
-
-
-
-
