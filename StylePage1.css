@@ -237,7 +237,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   align-self: flex-start;
-  margin: 42px 562px 0px 40px;
+  margin: 42px 400px 0px 40px;
 }
 
 .hotel {
@@ -291,7 +291,7 @@ body {
 #afficherPlus {
   font-size: 18px;
   font-weight: 700;
-  margin: 0px 729px 0px 44px;
+  margin: 0px 400px 0px 44px;
 }
 
 #afficherPlus:link {
