@@ -8,6 +8,7 @@ body {
 #logo {
   width: 61.09px;
   height: 19px;
+  margin-left: 5px;
 }
 #logo:hover {
   transform: scale(1.05);
@@ -18,11 +19,17 @@ body {
   margin: 44px 0px 63px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*icon*/
+
 .fa-solid {
   color: #0065fc;
+}
+
+.lastStar {
+  color: #f2f2f2;
 }
 /*icon*/
 
@@ -31,52 +38,57 @@ body {
   color: #0065fc;
   text-decoration: none;
   border-top: 2px solid #0065fc;
-  padding-top: 42px;
-  margin: 20px;
+  padding-top: 44px;
 }
 
 .nav-activity:hover {
   color: #0065fc;
   text-decoration: none;
   border-top: 2px solid #0065fc;
-  padding-top: 42px;
-  margin: 20px;
+  border-top-width: 100%;
+  padding-top: 44px;
 }
 
 .nav-home {
-  text-decoration: none;
-  padding: 20px;
   color: black;
-  margin: 20px;
+  text-decoration: none;
+  padding: 22px;
+  margin-right: 5px;
 }
 
 .nav-activity {
-  text-decoration: none;
-  padding: 20px;
   color: black;
-  margin: 20px;
+  text-decoration: none;
+  padding: 22px;
 }
 
 .nav-main {
+  margin-right: 77px;
   text-align: right;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
 /*Navigation*/
 
 /*Title*/
+
+#title {
+  margin-left: 5px;
+}
+
 #title h1 {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: -6px;
+  margin: 0%;
 }
 
 #title p {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  margin: 8px 0px 20px 0px;
 }
 /*Title*/
 
@@ -86,19 +98,20 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
   background-color: #f2f2f2;
-  padding: 14px 18px;
+  padding: 16px 18px;
 }
 
 .search-bar {
   display: flex;
-  margin-bottom: 31px;
+  margin: 0px 0px 31px 5px;
 }
 
 #search-text {
-  padding: 12px 20px;
+  padding: 14px 0px 14px 16px;
   border: 1px solid #f2f2f2;
   font-size: 16px;
   font-weight: 700;
+  width: 210px;
 }
 
 #search-button {
@@ -123,26 +136,37 @@ body {
 .filtres {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 4px 20px;
-  justify-content: flex-start;
-  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 914px;
+  height: 50px;
+  margin-left: 12px;
 }
 
 #filtretitle {
   font-weight: 700;
   font-size: 18px;
-  padding: 20px;
+}
+
+.filtres p {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.filtresAttribut {
+  margin: 10px;
+}
+
+.iconFiltre {
+  margin-right: 5px;
 }
 
 .filtres button {
   background-color: white;
   border: 2px solid #d9d9d9;
-  border-radius: 40px;
-  word-spacing: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  margin: 20px;
-  padding: 0px 18px 0px 18px;
+
   font-weight: 700;
   font-size: 16px;
 }
@@ -159,18 +183,18 @@ body {
   justify-content: flex-start;
   font-weight: 400;
   font-size: 16px;
-  padding: 10px;
-  margin: 28px 0px 10px 0px;
-  text-align: center;
+  margin: 38px 0px 39px 4px;
+  align-items: center;
 }
-.fa-info {
+.info span {
   border: 1px solid #d9d9d9;
   border-radius: 100%;
   width: 24px;
   line-height: 24px;
   text-align: center;
-  margin-right: 2%;
+  margin-right: 11px;
   font-size: 12px;
+  cursor: help;
 }
 /*info*/
 
@@ -178,6 +202,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-right: 61px;
 }
 
 /*Hebergement à marseille*/
@@ -185,20 +210,34 @@ body {
 .home {
   width: 880px;
   height: 626px;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-  overflow: auto;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: row;
+}
+
+.home a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.home a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#Cannebiere,
+#hotelMer {
+  margin-left: 40px;
 }
 
 .home h2 {
   font-size: 22px;
   font-weight: 700;
   align-self: flex-start;
-  margin: 42px 562px -15px 40px;
+  margin: 42px 562px 0px 40px;
 }
 
 .hotel {
@@ -206,13 +245,14 @@ body {
   height: 199px;
   background-color: #fff;
   border-radius: 20px;
-  border: 5px 5px 0px 5px solid white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: -15px 0px 0px 31px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .hotel img {
-  width: 246px;
-  height: 124px;
+  width: 236px;
+  height: 114px;
+  border: 5px solid white;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -220,13 +260,17 @@ body {
 .hotel h3 {
   font-size: 16px;
   font-weight: 700;
-  margin: 4px 26px 5px 16px;
+  margin: 0px 26px 5px 16px;
 }
 
 .hotel p {
   font-size: 14px;
   font-weight: 400;
-  margin: 0px 26px 7px 16px;
+  margin: 0px 26px 8px 16px;
+}
+
+.hotel:hover {
+  transform: scale(1.025);
 }
 
 .iconStar {
@@ -247,7 +291,7 @@ body {
 #afficherPlus {
   font-size: 18px;
   font-weight: 700;
-  margin: 0px 729px 10px 44px;
+  margin: 0px 729px 0px 44px;
 }
 
 #afficherPlus:link {
@@ -267,23 +311,34 @@ body {
 .homePopular {
   display: flex;
   flex-direction: row;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border-radius: 20px;
   width: 420px;
   height: 625px;
   flex-wrap: wrap;
-  overflow: auto;
   justify-content: center;
+}
+
+.homePopular a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.homePopular a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .PopularTitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 0%;
+  height: 62px;
 }
 
 .homePopular h4 {
-  margin: 41px 66px 26px 37px;
+  margin: 41px 66px 0px 37px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -299,15 +354,20 @@ body {
   height: 144px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 10px 10px 10px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   flex-direction: row;
 }
 
+.PopularHotelflex:hover {
+  transform: scale(1.025);
+}
+
 .homePopular img {
-  width: 137px;
-  height: 144px;
+  width: 127px;
+  height: 134px;
+  border: 5px solid white;
+  border-radius: 20px 0px 0px 20px;
   object-fit: cover;
 }
 
@@ -315,27 +375,26 @@ body {
   font-size: 16px;
   font-weight: 700;
   margin: 16px 20px 7px 15px;
-  
 }
 
 .textPopular {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
 .textPopular p {
   font-size: 14px;
   font-weight: 400;
   margin: 0px 0px 0px 15px;
-  flex:1;
+  flex: 1;
 }
 
 .popularIcon {
   font-size: 12px;
-  
   margin: 16px 0px 12px 15px;
 }
+
 /*Most Popular*/
 
 /*Activity*/
@@ -345,32 +404,109 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 1339px;
+}
+
+.activity a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.activity a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .activity h5 {
   font-size: 22px;
   font-weight: 700;
   overflow: auto;
-  margin: 60px 1148px 18.47px 0px;
+  margin: 60px 1000px 18.47px 0px;
 }
 
 .activity p {
   font-size: 16px;
   font-weight: 700;
-  margin-left: 16px;
+  margin-left: 19px;
 }
 
 .activityFlex {
   width: 302px;
   height: 444.51px;
-  overflow: auto;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.activityFlex:hover {
+  transform: scale(1.025);
+  transition-duration: 0.75s;
+  transition-delay: 0.25s;
 }
 
 .activity img {
   width: 302px;
   height: 389px;
   object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
 }
+
 /*Activity*/
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 225px;
+  background-color: #f2f2f2;
+  margin-top: 61px;
+  width: 1339px;
+}
+
+.footerFlex {
+  display: flex;
+  flex-direction: column;
+  width: 1295px;
+}
+
+.footerFlex:nth-child(1) {
+  margin-left: 70px;
+}
+
+.footerFlex:nth-child(3) {
+  margin-right: 28px;
+}
+
+footer h6 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 45px 0px 0px 0px;
+}
+
+footer ul {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
+  padding-left: 0%;
+  margin-top: 20px;
+}
+
+footer li {
+  margin-bottom: 12px;
+}
+
+footer a:link {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:visited {
+  color: black;
+}
+
+footer a:hover {
+  color: #0065fc;
+}
+/*Footer*/
