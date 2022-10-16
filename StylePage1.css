@@ -336,6 +336,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 0%;
   height: 62px;
 }
