@@ -5,8 +5,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 #logo {
   width: 61.09px;
   height: 19px;
@@ -140,7 +138,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 914px;
+  max-width: 914px;
   height: 50px;
   margin-left: 35px;
 }
@@ -187,6 +185,7 @@ body {
   font-size: 16px;
   margin: 38px 0px 39px 32px;
   align-items: center;
+  max-width: auto;
 }
 .info span {
   border: 1px solid #d9d9d9;
@@ -204,7 +203,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin:0px 26px 0px 26px;
+  margin: 0px 26px 0px 26px;
   width: auto;
 }
 
@@ -316,7 +315,7 @@ body {
   flex-direction: row;
   background-color: #f2f2f2;
   border-radius: 20px;
-  width: 420px;
+  max-width: 420px;
   height: 625px;
   flex-wrap: wrap;
   justify-content: center;
@@ -337,7 +336,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0%;
   height: 62px;
 }
 
@@ -350,7 +348,14 @@ body {
 .fa-chart-line {
   width: 18px;
   height: 15.75px;
-  margin: 46px 42px 31.25px;
+  margin: 0px 42px 0px;
+}
+
+.columnHotelFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 490px;
 }
 
 .PopularHotelflex {
@@ -404,12 +409,12 @@ body {
 /*Activity*/
 
 .activity {
-  margin:0px 26px 0px 26px;
+  margin: 0px 26px 0px 26px;
   width: auto;
 }
 
 .ActivityVignetteFlex {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -514,3 +519,138 @@ footer a:hover {
   color: #0065fc;
 }
 /*Footer*/
+
+@media screen and (max-width: 1417px) {
+  body {
+    margin: auto;
+    width: auto;
+  }
+
+  .navLogo {
+    margin:auto;
+    max-width: 883px;
+    padding:44px 0px 63px 0px;
+  }
+
+  #logo {
+    margin-left: 0%;
+  }
+
+  .nav-main {
+    margin: 0% ;
+  }
+
+  #title {
+    margin:auto;
+    max-width: 883px;
+  }
+
+
+  .search-bar {
+    margin:auto;
+    max-width: 905px;
+    padding: 0px 0px 31px 28px;
+  }
+
+
+
+  .filtres {
+    max-width: 883px;
+    margin: auto;
+    
+  }
+
+  .info {
+    max-width: 912px;
+    margin: auto;
+    padding: 38px 0px 39px 32px;
+  }
+
+  .homePopularFlex {
+    display: flex;
+    flex-direction: column;
+    gap:53px;
+  }
+
+  .home {
+    margin:auto;
+  }
+
+  .homePopular {
+
+    height: 278px;
+    max-width: 883px;
+    margin:auto;
+  }
+
+  .PopularTitle {
+    margin: 34px auto 26px 0px;
+    min-width: 883px;
+    height: 0px;
+  }
+
+  .PopularTitle i {
+    margin-right: 40px;
+  }
+
+  .PopularTitle h4 {
+    margin: 0px 0px 0px 40px;
+  }
+
+  .columnHotelFlex {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    min-width: 808px;
+    margin: auto 0 48px 0px;
+    }
+
+  .PopularHotelflex {
+    width: 252px;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .homePopular img {
+    width: 96px;
+    height: 134px;
+  }
+
+  .activity {
+    margin:auto;
+    max-width: 883px;
+    padding-bottom:61px;
+  }
+
+  .activity h5 {
+    margin: 70px 400px 38.47px 12px;
+
+  }
+
+  .activityFlex {
+    width:182px;
+    height: 267px;
+  }
+
+  .activity img {
+    max-width: 182px;
+    max-height: 211px;
+    object-fit:cover;
+    
+  }
+
+  .activity p{
+    max-width: 140px;
+  }
+
+  .PortNameLong {
+    margin-top:4px;
+  }
+
+  footer {
+    max-width: 879.65px;
+    margin:auto;
+    }
+}
