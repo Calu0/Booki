@@ -540,6 +540,10 @@ footer a:hover {
     margin: 0% ;
   }
 
+  .nav-activity {
+    padding-right:0%;
+  }
+
   #title {
     margin:auto;
     max-width: 883px;
