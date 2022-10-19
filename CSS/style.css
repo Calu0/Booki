@@ -28,6 +28,7 @@ body {
   color: #0065fc;
 }
 
+
 .lastStar {
   color: #f2f2f2;
 }
@@ -45,7 +46,6 @@ body {
   color: #0065fc;
   text-decoration: none;
   border-top: 2px solid #0065fc;
-  border-top-width: 100%;
   padding-top: 44px;
 }
 
@@ -130,6 +130,10 @@ body {
   transform: scale(1.02);
   opacity: 1;
 }
+
+#search-button .fa-magnifying-glass {
+  display: none;
+}
 /*barre de recherche*/
 
 /*Filtres*/
@@ -185,7 +189,6 @@ body {
   font-size: 16px;
   margin: 38px 0px 39px 32px;
   align-items: center;
-  max-width: auto;
 }
 .info span {
   border: 1px solid #d9d9d9;
@@ -520,7 +523,11 @@ footer a:hover {
 }
 /*Footer*/
 
+
+/*Responsive Tablette */
+
 @media screen and (max-width: 1417px) {
+
   body {
     margin: auto;
     width: auto;
@@ -555,8 +562,6 @@ footer a:hover {
     max-width: 905px;
     padding: 0px 0px 31px 28px;
   }
-
-
 
   .filtres {
     max-width: 883px;
@@ -658,3 +663,87 @@ footer a:hover {
     margin:auto;
     }
 }
+
+/*Responsive Tablette */
+
+/*Responsive Mobile */
+
+
+
+@media screen and (max-width: 926px) and (min-width: 200px){
+
+  body {
+    margin: auto;
+    width: auto;
+  }
+  
+
+.navLogo {
+  display: block;
+  padding-top: 21px;
+  text-align: center;
+  padding-bottom: 31px;
+}
+
+
+.nav-main {
+  display: flex;
+  margin: auto;
+  margin-top:48.51px;
+  max-width:926px;
+  }
+
+.nav-home {
+  flex: 1;
+  padding:0%;
+  padding-bottom:23.09px;
+  text-align: center;
+  margin-right: 0px;
+  border-bottom: 3px solid #F2F2F2;
+}
+
+.nav-activity {
+  text-align: center;
+  flex: 1;
+  padding: 0%;
+  padding-bottom:23.09px;
+  border-bottom: 3px solid #F2F2F2;
+}
+
+.nav-home:hover {
+  padding:0%;
+  padding-bottom:23.09px;
+  border-top: 0px;
+  border-bottom: 3px solid #0065FC;
+}
+
+.nav-activity:hover {
+  padding:0%;
+  padding-bottom:23.09px;
+  border-top: 0px;
+  border-bottom: 3px solid #0065FC;
+}
+
+#title {
+
+  margin: auto;
+  padding-left:20px;
+  max-width: 926px;
+}
+
+#search-button .fa-magnifying-glass {
+  display: block;
+  color: white;
+}
+.search-text {
+  display: none;
+}
+
+.search-bar {
+  margin: auto;
+  justify-content: center;
+}
+
+}
+
+/*Responsive Mobile */
