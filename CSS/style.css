@@ -28,7 +28,6 @@ body {
   color: #0065fc;
 }
 
-
 .lastStar {
   color: #f2f2f2;
 }
@@ -235,7 +234,7 @@ body {
 
 #Cannebiere,
 #hotelMer {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 .home h2 {
@@ -523,20 +522,18 @@ footer a:hover {
 }
 /*Footer*/
 
-
 /*Responsive Tablette */
 
 @media screen and (max-width: 1417px) {
-
   body {
     margin: auto;
     width: auto;
   }
 
   .navLogo {
-    margin:auto;
+    margin: auto;
     max-width: 883px;
-    padding:44px 0px 63px 0px;
+    padding: 44px 0px 63px 0px;
   }
 
   #logo {
@@ -544,21 +541,20 @@ footer a:hover {
   }
 
   .nav-main {
-    margin: 0% ;
+    margin: 0%;
   }
 
   .nav-activity {
-    padding-right:0%;
+    padding-right: 0%;
   }
 
   #title {
-    margin:auto;
+    margin: auto;
     max-width: 883px;
   }
 
-
   .search-bar {
-    margin:auto;
+    margin: auto;
     max-width: 905px;
     padding: 0px 0px 31px 28px;
   }
@@ -566,7 +562,6 @@ footer a:hover {
   .filtres {
     max-width: 883px;
     margin: auto;
-    
   }
 
   .info {
@@ -578,18 +573,17 @@ footer a:hover {
   .homePopularFlex {
     display: flex;
     flex-direction: column;
-    gap:53px;
+    gap: 53px;
   }
 
   .home {
-    margin:auto;
+    margin: auto;
   }
 
   .homePopular {
-
     height: 278px;
     max-width: 883px;
-    margin:auto;
+    margin: auto;
   }
 
   .PopularTitle {
@@ -612,7 +606,7 @@ footer a:hover {
     height: auto;
     min-width: 808px;
     margin: auto 0 48px 0px;
-    }
+  }
 
   .PopularHotelflex {
     width: 252px;
@@ -628,121 +622,365 @@ footer a:hover {
   }
 
   .activity {
-    margin:auto;
+    margin: auto;
     max-width: 883px;
-    padding-bottom:61px;
+    padding-bottom: 61px;
   }
 
   .activity h5 {
     margin: 70px 400px 38.47px 12px;
-
   }
 
   .activityFlex {
-    width:182px;
+    width: 182px;
     height: 267px;
   }
 
   .activity img {
     max-width: 182px;
     max-height: 211px;
-    object-fit:cover;
-    
+    object-fit: cover;
   }
 
-  .activity p{
+  .activity p {
     max-width: 140px;
   }
 
   .PortNameLong {
-    margin-top:4px;
+    margin-top: 4px;
   }
 
   footer {
     max-width: 879.65px;
-    margin:auto;
-    }
+    margin: auto;
+  }
 }
 
 /*Responsive Tablette */
 
 /*Responsive Mobile */
 
+@media screen and (max-width: 926px) and (min-width: 200px) {
+  .navLogo {
+    display: block;
+    padding-top: 21px;
+    text-align: center;
+    padding-bottom: 31px;
+  }
 
-
-@media screen and (max-width: 926px) and (min-width: 200px){
-
-  body {
+  .nav-main {
+    display: flex;
     margin: auto;
-    width: auto;
+    margin-top: 48.51px;
+    max-width: 926px;
   }
+
+  .nav-home {
+    flex: 1;
+    padding: 0%;
+    padding-bottom: 23.09px;
+    text-align: center;
+    margin-right: 0px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .nav-activity {
+    text-align: center;
+    flex: 1;
+    padding: 0%;
+    padding-bottom: 23.09px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .nav-home:hover {
+    padding: 0%;
+    padding-bottom: 23.09px;
+    border-top: 0px;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  .nav-activity:hover {
+    padding: 0%;
+    padding-bottom: 23.09px;
+    border-top: 0px;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  #title {
+    margin: auto;
+    padding-left: 20px;
+    max-width: 926px;
+  }
+
+  .search-bar {
+    margin: auto;
+  }
+  .filtres {
+    padding-left: 20px;
+  }
+
+  .homePopularFlex {
+    flex-direction: column-reverse;
+  }
+
+  .home {
+    width: 600px;
+    height: 780px;
+  }
+
+  .home h2 {
+    margin-right: 200px;
+  }
+
+  .hotel {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  #Cannebiere,
+  #hotelMer {
+    margin-left: auto;
+  }
+
+  #afficherPlus {
+    margin-top: 10px;
+  }
+
+  .homePopular {
+    height: 440px;
+    width: 600px;
+  }
+
+  .PopularTitle {
+    min-width: initial;
+  }
+
+  .PopularTitle h4 {
+    margin-right: 258px;
+  }
+
+
+  .columnHotelFlex {
+    margin: 0%;
+    min-width: initial;
+    max-width: 558px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: -35px;
+  }
+
+
+  .activity {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+
+  .activity h5 {
+    margin: auto;
+    padding: 60px 0px 38.47px 12px;
   
-
-.navLogo {
-  display: block;
-  padding-top: 21px;
-  text-align: center;
-  padding-bottom: 31px;
-}
-
-
-.nav-main {
-  display: flex;
-  margin: auto;
-  margin-top:48.51px;
-  max-width:926px;
   }
 
-.nav-home {
-  flex: 1;
-  padding:0%;
-  padding-bottom:23.09px;
-  text-align: center;
-  margin-right: 0px;
-  border-bottom: 3px solid #F2F2F2;
+  .ActivityVignetteFlex {
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 600px;
+    height: 440px;
+  }
+
+  .activityFlex {
+    width: 285px;
+    height: 190px;
+  }
+
+  .activity img {
+    max-width: none;
+    width: 285px;
+    height: 134px;
+  }
+
+  .footerFlex:nth-child(1) {
+    margin-left: 40px;
+  }
+
+  .footerFlex:nth-child(3) {
+    margin-right: 0%;
+  }
 }
 
-.nav-activity {
-  text-align: center;
-  flex: 1;
-  padding: 0%;
-  padding-bottom:23.09px;
-  border-bottom: 3px solid #F2F2F2;
+@media screen and (max-width: 810px) {
+  .filtres {
+    padding-left: 20px;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #filtretitle {
+    flex-basis: 100%;
+  }
+
+  .filtres button {
+    margin: 5px;
+  }
+
+  .filtres p {
+    font-size: 15px;
+  }
 }
 
-.nav-home:hover {
-  padding:0%;
-  padding-bottom:23.09px;
-  border-top: 0px;
-  border-bottom: 3px solid #0065FC;
+@media screen and (max-width: 686px) {
+  #title {
+    padding-left: 10px;
+  }
+
+  #search-button .fa-magnifying-glass {
+    display: block;
+    color: white;
+  }
+  .search-text {
+    display: none;
+  }
+
+  .search-bar {
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-left: 5px;
+  }
+
+  .filtres {
+    padding-left: 10px;
+  }
+
+  .info {
+    padding-left: 26px;
+  }
+
+  .info span{
+    
+  }
+
+  .homePopularFlex{
+    margin: auto;
+    max-width: fit-content;
+  }
+
+  .homePopular {
+    height: 580px;
+    width: 375px;
+  }
+
+  .PopularTitle h4 {
+    margin: 0px 53px 0px 24px;
+  }
+
+  .PopularHotelflex {
+    width: 344px;
+    height: 144px;
+    justify-content: flex-start;
+  }
+
+  .homePopular img {
+    width: 127px;
+    height: 134px;
+  }
+
+  .home {
+    height: 1450px;
+    width: 375px;
+    justify-content: space-around;
+    
+  }
+
+  .home h2 {
+    margin:30px 50px -12px 0px;
+     
+  }
+
+  #afficherPlus {
+    margin:7px 214px 0px 0px;
+  }
+
+  .hotel {
+    width: 335px;
+    height: 199px;
+  }
+
+  .hotel img {
+    width: 325px;
+    height: 114px;
+  }
+
+  .activity {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 375px;
+    padding: 0%;
+    padding: 50px 0px 70px 0px;
+    margin:auto;
+
+  }
+
+  .ActivityVignetteFlex {
+    flex-direction: row;
+    height: 850px;
+    width: 375px;
+    justify-content: space-around;
+  }
+
+  .activityFlex {
+    width: 335px;
+    height: 190px;
+  }
+
+  .activity img {
+    max-width: none;
+    width: 335px;
+    height: 134px;
+  }
+
+  .activity h5 {
+    text-align: start;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 12px 30px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    padding-left: 20px;
+  }
+
+  .footerFlex:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  footer h6 {
+    margin-top: 40px;
+  }
 }
 
-.nav-activity:hover {
-  padding:0%;
-  padding-bottom:23.09px;
-  border-top: 0px;
-  border-bottom: 3px solid #0065FC;
+@media screen and (max-width: 400px) {
+
+.homePopular {
+  border-radius: 0%;
+  width: fit-content;
 }
 
-#title {
-
-  margin: auto;
-  padding-left:20px;
-  max-width: 926px;
+.PopularTitle h4{
+  margin:0px 49px 0px 10px;
 }
 
-#search-button .fa-magnifying-glass {
-  display: block;
-  color: white;
-}
-.search-text {
-  display: none;
+.home {
+  background-color: white;
 }
 
-.search-bar {
-  margin: auto;
-  justify-content: center;
-}
 
 }
 
