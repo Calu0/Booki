@@ -110,7 +110,8 @@ body {
   border: 1px solid #f2f2f2;
   font-size: 16px;
   font-weight: 700;
-  width: 210px;
+  width: 60%;
+  max-width: 210px;
 }
 
 #search-button {
@@ -524,7 +525,7 @@ footer a:hover {
 
 /*Responsive Tablette */
 
-@media screen and (max-width: 1417px) {
+@media screen and (max-width: 1390px) {
   body {
     margin: auto;
     width: auto;
@@ -660,7 +661,7 @@ footer a:hover {
 
 /*Responsive Mobile */
 
-@media screen and (max-width: 926px) and (min-width: 200px) {
+@media screen and (max-width: 926px) and (min-width: 20px) {
   .navLogo {
     display: block;
     padding-top: 21px;
@@ -816,7 +817,6 @@ footer a:hover {
     padding-left: 20px;
     flex-wrap: wrap;
     height: auto;
-    justify-content: space-around;
     align-items: center;
   }
 
@@ -833,9 +833,9 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 686px) {
+@media screen and (max-width: 686px) and (min-width:20px){
   #title {
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   #search-button .fa-magnifying-glass {
@@ -848,21 +848,53 @@ footer a:hover {
 
   .search-bar {
     margin: auto;
-    justify-content: center;
     padding-bottom: 15px;
-    padding-left: 5px;
+    padding-left: 20px;
   }
 
   .filtres {
-    padding-left: 10px;
+    padding-left: 0%;
+    justify-content: center;
+  }
+
+  #filtretitle {
+    padding-left:20px;
+  }
+
+
+  .filtres button {
+    width:160px ;
+    height: 50px;
+    padding: 0%;
+    margin-right:10px;
+    margin-left:10px;
+  }
+
+  .filtres button:hover {
+    background-color: white;
+    box-shadow:0px 0px 3px 2px white, 0px 4px 3px 2px #d9d9d9;
+  }
+
+  .filtres button:active {
+    background-color: #deebff;
+  }
+
+
+  .filtres p {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .iconFiltre {
+    margin-right: 0%;
+    font-size: 21px;
+    flex-basis:22%;
   }
 
   .info {
-    padding-left: 26px;
-  }
-
-  .info span{
-    
+    padding:39px 20px 17px 20px;
   }
 
   .homePopularFlex{
@@ -876,7 +908,11 @@ footer a:hover {
   }
 
   .PopularTitle h4 {
-    margin: 0px 53px 0px 24px;
+    margin: 0px 118px 0px 24px;
+  }
+
+  .PopularTitle i {
+    margin:0%;
   }
 
   .PopularHotelflex {
@@ -920,7 +956,8 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     padding: 0%;
     padding: 50px 0px 70px 0px;
     margin:auto;
@@ -930,13 +967,14 @@ footer a:hover {
   .ActivityVignetteFlex {
     flex-direction: row;
     height: 850px;
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     justify-content: space-around;
   }
 
   .activityFlex {
-    width: 335px;
-    height: 190px;
+    max-width: 335px;
+    width: 100%;
   }
 
   .activity img {
@@ -966,20 +1004,45 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
+
+  #afficherPlus {
+    display: none;
+  }
 
 .homePopular {
   border-radius: 0%;
   width: fit-content;
 }
 
+.fa-chart-line {
+  margin: 0%;
+}
+
 .PopularTitle h4{
-  margin:0px 49px 0px 10px;
+  margin:0px 125px 0px 20px;
+}
+
+.PopularTitle i {
+  padding-right: 5px;
+  margin-right: 0%;
 }
 
 .home {
   background-color: white;
+  width: 100%;
 }
+
+.hotel {
+  width: 90%;
+  max-width: 335px;
+}
+
+.hotel img {
+  max-width: 325px;
+  width: 97%;
+}
+
 
 
 }
