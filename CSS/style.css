@@ -387,7 +387,7 @@ body {
 .homePopular h3 {
   font-size: 16px;
   font-weight: 700;
-  margin: 16px 20px 7px 15px;
+  margin: 16px 15px 7px 15px;
 }
 
 .textPopular {
@@ -441,7 +441,7 @@ body {
 .activity p {
   font-size: 16px;
   font-weight: 700;
-  margin-left: 19px;
+  margin-left: 15px;
 }
 
 .activityFlex {
@@ -644,10 +644,6 @@ footer a:hover {
     object-fit: cover;
   }
 
-  .activity p {
-    max-width: 140px;
-  }
-
   .PortNameLong {
     margin-top: 4px;
   }
@@ -759,7 +755,8 @@ footer a:hover {
   }
 
   .PopularTitle h4 {
-    margin-right: 258px;
+    margin-left:48px;
+    margin-right: 251px;
   }
 
 
@@ -802,6 +799,10 @@ footer a:hover {
     max-width: none;
     width: 285px;
     height: 134px;
+  }
+
+  .PortNameLong {
+    margin-top:5%;
   }
 
   .footerFlex:nth-child(1) {
