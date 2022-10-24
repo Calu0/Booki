@@ -193,7 +193,8 @@ body {
 .info span {
   border: 1px solid #d9d9d9;
   border-radius: 100%;
-  width: 24px;
+  max-width: 24px;
+  width: 100%;
   line-height: 24px;
   text-align: center;
   margin-right: 11px;
@@ -848,8 +849,7 @@ footer a:hover {
 
   .search-bar {
     margin: auto;
-    padding-bottom: 15px;
-    padding-left: 20px;
+    padding:0px 20px 15px 20px;
   }
 
   .filtres {
@@ -905,8 +905,14 @@ footer a:hover {
     width: 375px;
   }
 
+  .PopularTitle {
+    margin: 23px 0px 0px 0px;
+    max-width: 375px;
+    width: 90%;
+  }
+
   .PopularTitle h4 {
-    margin: 0px 118px 0px 24px;
+    margin:0px;
   }
 
   .PopularTitle i {
@@ -932,7 +938,9 @@ footer a:hover {
   }
 
   .home h2 {
-    margin:30px 50px -12px 0px;
+    margin:20px -10px -19px 0px;
+    max-width: 375px;
+    width: 90%;
      
   }
 
@@ -963,7 +971,7 @@ footer a:hover {
   }
 
   .ActivityVignetteFlex {
-    flex-direction: row;
+    flex-direction: column;
     height: 850px;
     max-width: 375px;
     width: 100%;
@@ -972,19 +980,29 @@ footer a:hover {
 
   .activityFlex {
     max-width: 335px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   .activity img {
-    max-width: none;
-    width: 335px;
+    width: 100%;
+    max-width: 335px;
     height: 134px;
   }
 
   .activity h5 {
     text-align: start;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 12px 30px;
+    margin: 0px 0px 5px 20px;
+  }
+
+  .activity p {
+    margin-right: 0%;
+    max-width: none;
+  }
+
+  .PortNameLong {
+    margin-top:5%;
   }
 
   footer {
@@ -1008,6 +1026,11 @@ footer a:hover {
     display: none;
   }
 
+
+  .homePopularFlex {
+    gap:35px
+  }
+
 .homePopular {
   border-radius: 0%;
   width: fit-content;
@@ -1017,18 +1040,23 @@ footer a:hover {
   margin: 0%;
 }
 
-.PopularTitle h4{
-  margin:0px 125px 0px 20px;
+.PopularTitle {
+ margin: 27px 0px 26px 0px;
+  
 }
 
 .PopularTitle i {
-  padding-right: 5px;
   margin-right: 0%;
 }
 
 .home {
   background-color: white;
   width: 100%;
+  height: 1316px;
+}
+
+.home h2 {
+  margin: 0px;
 }
 
 .hotel {
@@ -1037,10 +1065,26 @@ footer a:hover {
 }
 
 .hotel img {
-  max-width: 325px;
   width: 97%;
 }
 
+
+.columnHotelFlex {
+  width: 90%;
+  flex-direction: column;
+  height: 463px;
+}
+
+.PopularHotelflex {
+  max-width: 334px;
+  width: 100%;
+  margin: auto;
+}
+
+.homePopular img {
+  max-width: 127px;
+  width: 100%;
+}
 
 
 }
