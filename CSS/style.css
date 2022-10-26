@@ -203,8 +203,8 @@ body {
 .homePopularFlex {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 26px;
   margin:auto;
   width: auto;
   padding: 0px 20px;
@@ -244,6 +244,7 @@ body {
 
 .hotel {
   max-width: 239px;
+  min-width: 192px;
   width: 27%;
   height: 194px;
   background-color: #fff;
@@ -318,7 +319,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 20px;
   max-width: 420px;
-  width: 50%;
+  width: 44%;
   height: 625px;
   flex-wrap: wrap;
   justify-content: center;
@@ -340,6 +341,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.PopularTitle i {
+  margin-left: 10px;
 }
 
 .homePopular h4 {
@@ -424,6 +429,8 @@ body {
   justify-content: space-between;
   width: 100%;
   margin: auto;
+  display: flex;
+  gap: 25px;
 }
 
 .activity a:link {
@@ -439,7 +446,7 @@ body {
 .activity h5 {
   font-size: 22px;
   font-weight: 700;
-  margin: 60px 1000px 18.47px 0px;
+  margin: 60px 0px 18.47px 0px;
 }
 
 .activity p {
@@ -449,11 +456,16 @@ body {
 }
 
 .activityFlex {
-  width: 302px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 302px;
   height: 444.51px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
+
 
 .activityFlex:hover {
   transform: scale(1.025);
