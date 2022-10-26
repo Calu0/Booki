@@ -1,6 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
-  width: 1400px;
+  max-width: 1400px;
   margin: auto;
   box-sizing: border-box;
 }
@@ -203,21 +203,22 @@ body {
 .homePopularFlex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 26px 0px 26px;
+  justify-content: space-around;
+  margin:auto;
   width: auto;
 }
 
 /*Hebergement à marseille*/
 
 .home {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   height: 626px;
   background-color: #f2f2f2;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
@@ -231,31 +232,28 @@ body {
   color: black;
 }
 
-#Cannebiere,
-#hotelMer {
-  margin-left: 40px;
-}
-
 .home h2 {
   font-size: 22px;
   font-weight: 700;
   align-self: flex-start;
-  margin: 42px 400px 0px 40px;
+  flex-basis: 100%;
+  margin: 40px 0px 0px 40px;
 }
 
 .hotel {
-  width: 246px;
-  height: 199px;
+  max-width: 239px;
+  width: 100%;
+  height: 194px;
   background-color: #fff;
   border-radius: 20px;
-  margin: -15px 0px 0px 31px;
+  padding:5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  flex-basis:30%;
 }
 
 .hotel img {
-  width: 236px;
+  width: 100%;
   height: 114px;
-  border: 5px solid white;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -289,12 +287,14 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  margin-top:5px;
 }
 
 #afficherPlus {
   font-size: 18px;
   font-weight: 700;
-  margin: 0px 400px 0px 44px;
+  flex-basis: 100%;
+  margin: 0px 0px 0px 40px;
 }
 
 #afficherPlus:link {
@@ -313,10 +313,11 @@ body {
 
 .homePopular {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 20px;
   max-width: 420px;
+  width: 100%;
   height: 625px;
   flex-wrap: wrap;
   justify-content: center;
@@ -334,14 +335,14 @@ body {
 
 .PopularTitle {
   display: flex;
+  width: 90%;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  height: 62px;
 }
 
 .homePopular h4 {
-  margin: 41px 66px 0px 37px;
+  margin: 42px 0px 0px 37px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -349,19 +350,20 @@ body {
 .fa-chart-line {
   width: 18px;
   height: 15.75px;
-  margin: 0px 42px 0px;
 }
 
 .columnHotelFlex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 490px;
+  height: 492px;
+  margin: auto;
 }
 
 .PopularHotelflex {
-  width: 343px;
+  max-width: 343px;
   height: 144px;
+  width: 100%;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -374,17 +376,17 @@ body {
 }
 
 .homePopular img {
-  width: 127px;
-  height: 134px;
-  border: 5px solid white;
+  max-width: 137px;
+  width: 100%;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
+  border: 5px solid white;
 }
 
 .homePopular h3 {
   font-size: 16px;
   font-weight: 700;
-  margin: 16px 15px 7px 15px;
+  margin: 12px 15px 7px 15px;
 }
 
 .textPopular {
@@ -417,6 +419,8 @@ body {
 .ActivityVignetteFlex {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
 
 .activity a:link {
@@ -455,7 +459,7 @@ body {
 }
 
 .activity img {
-  width: 302px;
+  width: 100%;
   height: 389px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -523,16 +527,12 @@ footer a:hover {
 
 /*Responsive Tablette */
 
-@media screen and (max-width: 1390px) {
-  body {
-    margin: auto;
-    width: auto;
-  }
+@media screen and (max-width: 992px) {
 
   .navLogo {
     margin: auto;
     max-width: 883px;
-    padding: 44px 0px 63px 0px;
+    padding: 44px 20px 63px 20px;
   }
 
   #logo {
@@ -548,6 +548,7 @@ footer a:hover {
   }
 
   #title {
+    padding-left: 20px;
     margin: auto;
     max-width: 883px;
   }
@@ -561,12 +562,13 @@ footer a:hover {
   .filtres {
     max-width: 883px;
     margin: auto;
+    padding-left:20px;
   }
 
   .info {
     max-width: 912px;
     margin: auto;
-    padding: 38px 0px 39px 32px;
+    padding: 26px 0px 28px 32px;
   }
 
   .homePopularFlex {
@@ -577,53 +579,56 @@ footer a:hover {
 
   .home {
     margin: auto;
+    width: 98%;
   }
 
   .homePopular {
     height: 278px;
     max-width: 883px;
+    width: 98%;
     margin: auto;
   }
 
   .PopularTitle {
-    margin: 34px auto 26px 0px;
-    min-width: 883px;
-    height: 0px;
+    width: 96%;
   }
 
   .PopularTitle i {
-    margin-right: 40px;
+ 
   }
 
   .PopularTitle h4 {
-    margin: 0px 0px 0px 40px;
+    margin: 26px 0px 0px 40px;
   }
 
   .columnHotelFlex {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: auto;
-    min-width: 808px;
     margin: auto 0 48px 0px;
   }
 
   .PopularHotelflex {
-    width: 252px;
+    max-width: 252px;
+    width: 100%;
     height: 144px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-basis: 30%;
   }
 
   .homePopular img {
-    width: 96px;
-    height: 134px;
+    width: 100%;
+    max-width: 96px;
   }
 
   .activity {
     margin: auto;
     max-width: 883px;
     padding-bottom: 61px;
+    width: 98%;
+    box-sizing: border-box;
   }
 
   .activity h5 {
@@ -636,9 +641,7 @@ footer a:hover {
   }
 
   .activity img {
-    max-width: 182px;
     max-height: 211px;
-    object-fit: cover;
   }
 
   .PortNameLong {
@@ -655,19 +658,18 @@ footer a:hover {
 
 /*Responsive Mobile */
 
-@media screen and (max-width: 926px) and (min-width: 20px) {
+@media screen and (max-width: 768px) {
+
   .navLogo {
     display: block;
     padding-top: 21px;
     text-align: center;
-    padding-bottom: 31px;
+    padding:21px 0px 31px 0px;
   }
 
   .nav-main {
     display: flex;
-    margin: auto;
     margin-top: 48.51px;
-    max-width: 926px;
   }
 
   .nav-home {
@@ -702,135 +704,6 @@ footer a:hover {
   }
 
   #title {
-    margin: auto;
-    padding-left: 20px;
-    max-width: 926px;
-  }
-
-  .search-bar {
-    margin: auto;
-  }
-  .filtres {
-    padding-left: 20px;
-  }
-
-  .homePopularFlex {
-    flex-direction: column-reverse;
-  }
-
-  .home {
-    width: 600px;
-    height: 780px;
-  }
-
-  .home h2 {
-    margin-right: 200px;
-  }
-
-  .hotel {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  #Cannebiere,
-  #hotelMer {
-    margin-left: auto;
-  }
-
-  #afficherPlus {
-    margin-top: 10px;
-  }
-
-  .homePopular {
-    height: 440px;
-    width: 600px;
-  }
-
-  .PopularTitle {
-    min-width: initial;
-  }
-
-  .PopularTitle h4 {
-    margin-left: 44px;
-    margin-right: 251px;
-  }
-
-  .columnHotelFlex {
-    margin: 0%;
-    min-width: initial;
-    max-width: 558px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: -35px;
-  }
-
-  .activity {
-    max-width: 600px;
-    margin: auto;
-    padding-bottom: 40px;
-  }
-
-  .activity h5 {
-    margin: auto;
-    padding: 60px 0px 38.47px 12px;
-  }
-
-  .ActivityVignetteFlex {
-    margin: auto;
-    flex-wrap: wrap;
-    max-width: 600px;
-    height: 440px;
-  }
-
-  .activityFlex {
-    width: 285px;
-    height: 190px;
-  }
-
-  .activity img {
-    max-width: none;
-    width: 285px;
-    height: 134px;
-  }
-
-  .PortNameLong {
-    margin-top: 5%;
-  }
-
-  .footerFlex:nth-child(1) {
-    margin-left: 40px;
-  }
-
-  .footerFlex:nth-child(3) {
-    margin-right: 0%;
-  }
-}
-
-@media screen and (max-width: 810px) {
-  .filtres {
-    padding-left: 20px;
-    flex-wrap: wrap;
-    height: auto;
-    align-items: center;
-  }
-
-  #filtretitle {
-    flex-basis: 100%;
-  }
-
-  .filtres button {
-    margin: 5px;
-  }
-
-  .filtres p {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 686px) and (min-width: 20px) {
-  #title {
     padding-left: 20px;
   }
 
@@ -848,17 +721,21 @@ footer a:hover {
   }
 
   .filtres {
-    padding-left: 0%;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
     justify-content: center;
+    padding-left: 0%;
   }
 
   #filtretitle {
+    flex-basis: 100%;
     padding-left: 20px;
   }
 
   .filtres button {
+    margin: 5px;
     width: 160px;
-    height: 50px;
     padding: 0%;
     font-size: 11px;
     display: flex;
@@ -875,12 +752,6 @@ footer a:hover {
     background-color: #deebff;
   }
 
-  .filtres p {
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-  }
-
   .iconFiltre {
     margin-right: 0%;
     font-size: 21px;
@@ -894,70 +765,81 @@ footer a:hover {
   .homePopularFlex {
     margin: auto;
     max-width: fit-content;
+    flex-direction: column-reverse;
+    gap: 12px;
   }
 
-  .homePopular {
-    height: 580px;
-    width: 375px;
+  .home {
+    background-color: white;
+    width: 100%;
+    height: 1410px;
   }
 
-  .PopularTitle {
-    margin: 23px 0px 0px 0px;
-    max-width: 375px;
+  .home h2 {
+    margin: 20px 20px 0px 20px;
+  }
+
+  .hotel {
     width: 90%;
+    max-width: 735px;
+    height: 199px;
+    margin: auto;
+    flex-basis: 90%;
   }
 
-  .PopularTitle h4 {
-    margin: 0px;
+  .hotel img {
+    width: 100%;
   }
 
-  .PopularTitle i {
-    margin: 0%;
+  #afficherPlus {
+    display: none;
   }
 
   .PopularHotelflex {
-    width: 344px;
-    height: 144px;
+    max-width: 735px;
+    width: 100%;
+    margin: auto;
     justify-content: flex-start;
   }
 
   .homePopular img {
-    width: 127px;
-    height: 134px;
+    max-width: 30%;
+    min-width: 35%;
   }
 
-  .home {
-    height: 1450px;
-    width: 375px;
-    justify-content: space-around;
+  .homePopular {
+    border-radius: 0%;
+    height: 615px;
+    width: 100%;
   }
 
-  .home h2 {
-    margin: 20px -10px -19px 0px;
-    max-width: 375px;
+  .columnHotelFlex {
     width: 90%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0px;
+    height:500px;
   }
 
-  #afficherPlus {
-    margin: 7px 214px 0px 0px;
+  
+  .PopularTitle {
+    margin: 28px 0px 24px 0px;
   }
 
-  .hotel {
-    width: 335px;
-    height: 199px;
+.PopularTitle h4  {
+  margin: 0px 0px 0px 20px;
+}
+
+  .PopularTitle i {
+    margin-right: 0%;
   }
 
-  .hotel img {
-    width: 325px;
-    height: 114px;
-  }
 
   .activity {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    max-width: 375px;
     padding: 0%;
     padding: 50px 0px 70px 0px;
     margin: auto;
@@ -966,27 +848,25 @@ footer a:hover {
   .ActivityVignetteFlex {
     flex-direction: column;
     height: 850px;
-    max-width: 375px;
     width: 100%;
     justify-content: space-around;
   }
 
   .activityFlex {
-    max-width: 335px;
+    max-width: 735px;
     width: 90%;
+     height: 190px;
     margin: auto;
   }
 
   .activity img {
-    width: 100%;
-    max-width: 335px;
     height: 134px;
   }
 
   .activity h5 {
     text-align: start;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 20px;
+    margin: 0px 0px 10px 20px;
   }
 
   .activity p {
@@ -1011,69 +891,7 @@ footer a:hover {
   footer h6 {
     margin-top: 40px;
   }
-}
 
-@media screen and (max-width: 414px) {
-  #afficherPlus {
-    display: none;
-  }
-
-  .homePopularFlex {
-    gap: 35px;
-  }
-
-  .homePopular {
-    border-radius: 0%;
-    width: fit-content;
-  }
-
-  .fa-chart-line {
-    margin: 0%;
-  }
-
-  .PopularTitle {
-    margin: 27px 0px 26px 0px;
-  }
-
-  .PopularTitle i {
-    margin-right: 0%;
-  }
-
-  .home {
-    background-color: white;
-    width: 100%;
-    height: 1316px;
-  }
-
-  .home h2 {
-    margin: 0px;
-  }
-
-  .hotel {
-    width: 90%;
-    max-width: 335px;
-  }
-
-  .hotel img {
-    width: 97%;
-  }
-
-  .columnHotelFlex {
-    width: 90%;
-    flex-direction: column;
-    height: 463px;
-  }
-
-  .PopularHotelflex {
-    max-width: 334px;
-    width: 100%;
-    margin: auto;
-  }
-
-  .homePopular img {
-    max-width: 127px;
-    width: 100%;
-  }
-}
+ }
 
 /*Responsive Mobile */
