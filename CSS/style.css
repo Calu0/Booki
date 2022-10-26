@@ -203,9 +203,11 @@ body {
 .homePopularFlex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   margin:auto;
   width: auto;
+  padding: 0px 20px;
 }
 
 /*Hebergement à marseille*/
@@ -242,13 +244,12 @@ body {
 
 .hotel {
   max-width: 239px;
-  width: 100%;
+  width: 27%;
   height: 194px;
   background-color: #fff;
   border-radius: 20px;
   padding:5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  flex-basis:30%;
 }
 
 .hotel img {
@@ -261,13 +262,13 @@ body {
 .hotel h3 {
   font-size: 16px;
   font-weight: 700;
-  margin: 0px 26px 5px 16px;
+  margin: 0px 0px 5px 16px;
 }
 
 .hotel p {
   font-size: 14px;
   font-weight: 400;
-  margin: 0px 26px 8px 16px;
+  margin: 0px 0px 8px 16px;
 }
 
 .hotel:hover {
@@ -317,7 +318,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 20px;
   max-width: 420px;
-  width: 100%;
+  width: 50%;
   height: 625px;
   flex-wrap: wrap;
   justify-content: center;
@@ -335,7 +336,7 @@ body {
 
 .PopularTitle {
   display: flex;
-  width: 90%;
+  width: 92%;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
@@ -358,6 +359,8 @@ body {
   justify-content: space-between;
   height: 492px;
   margin: auto;
+  max-width: 343px;
+  width: 85%;
 }
 
 .PopularHotelflex {
@@ -377,7 +380,7 @@ body {
 
 .homePopular img {
   max-width: 137px;
-  width: 100%;
+  width: 36%;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
   border: 5px solid white;
