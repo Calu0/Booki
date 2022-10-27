@@ -349,7 +349,7 @@ body {
 }
 
 .homePopular h4 {
-  margin: 42px 0px 0px 36px;
+  margin: 40px 0px 0px 36px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -365,7 +365,7 @@ body {
   justify-content: space-between;
   height: 480px;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 33px;
   max-width: 343px;
   width: 85%;
 }
