@@ -31,6 +31,7 @@ body {
 .lastStar {
   color: #f2f2f2;
 }
+
 /*icon*/
 
 /*Navigation*/
@@ -205,7 +206,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 26px;
-  margin:auto;
+  margin: auto;
   width: auto;
   padding: 0px 20px;
 }
@@ -239,23 +240,23 @@ body {
   font-weight: 700;
   align-self: flex-start;
   flex-basis: 100%;
-  margin: 40px 0px 0px 40px;
+  margin: 40px 0px 0px 35px;
 }
 
 .hotel {
-  max-width: 239px;
-  min-width: 192px;
+  max-width: 234px;
+  min-width: 187px;
   width: 27%;
   height: 194px;
   background-color: #fff;
   border-radius: 20px;
-  padding:5px;
+  padding: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .hotel img {
   width: 100%;
-  height: 114px;
+  height: 119px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -263,13 +264,13 @@ body {
 .hotel h3 {
   font-size: 16px;
   font-weight: 700;
-  margin: 0px 0px 5px 16px;
+  margin: 0px 0px 5px 10px;
 }
 
 .hotel p {
   font-size: 14px;
   font-weight: 400;
-  margin: 0px 0px 8px 16px;
+  margin: 0px 0px 8px 10px;
 }
 
 .hotel:hover {
@@ -281,7 +282,7 @@ body {
   flex-direction: row;
   width: 12px;
   height: 12px;
-  margin-left: 16px;
+  margin-left: 10px;
   font-size: 12px;
 }
 
@@ -289,14 +290,14 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 #afficherPlus {
   font-size: 18px;
   font-weight: 700;
   flex-basis: 100%;
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 0px 35px;
 }
 
 #afficherPlus:link {
@@ -337,7 +338,7 @@ body {
 
 .PopularTitle {
   display: flex;
-  width: 92%;
+  width: 91%;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
@@ -348,7 +349,7 @@ body {
 }
 
 .homePopular h4 {
-  margin: 42px 0px 0px 37px;
+  margin: 42px 0px 0px 34px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -362,15 +363,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 492px;
+  height: 480px;
   margin: auto;
+  margin-top: 32px;
   max-width: 343px;
   width: 85%;
 }
 
 .PopularHotelflex {
-  max-width: 343px;
-  height: 144px;
+  max-width: 338px;
+  height: 139px;
   width: 100%;
   background-color: white;
   border-radius: 20px;
@@ -384,7 +386,7 @@ body {
 }
 
 .homePopular img {
-  max-width: 137px;
+  max-width: 132px;
   width: 36%;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
@@ -412,7 +414,7 @@ body {
 
 .popularIcon {
   font-size: 12px;
-  margin: 16px 0px 12px 15px;
+  margin: 0px 0px 12px 15px;
 }
 
 /*Most Popular*/
@@ -452,20 +454,19 @@ body {
 .activity p {
   font-size: 16px;
   font-weight: 700;
+  margin: auto;
   margin-left: 15px;
 }
 
 .activityFlex {
   display: flex;
   flex-direction: column;
-  width: 100%; 
+  width: 100%;
   max-width: 302px;
   height: 444.51px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
-
 
 .activityFlex:hover {
   transform: scale(1.025);
@@ -543,7 +544,6 @@ footer a:hover {
 /*Responsive Tablette */
 
 @media screen and (max-width: 992px) {
-
   .navLogo {
     margin: auto;
     max-width: 883px;
@@ -577,7 +577,7 @@ footer a:hover {
   .filtres {
     max-width: 883px;
     margin: auto;
-    padding-left:20px;
+    padding: 0px 15px 0px 20px;
   }
 
   .info {
@@ -594,13 +594,13 @@ footer a:hover {
 
   .home {
     margin: auto;
-    width: 98%;
+    width: 96%;
   }
 
   .homePopular {
     height: 278px;
     max-width: 883px;
-    width: 98%;
+    width: 96%;
     margin: auto;
   }
 
@@ -609,7 +609,6 @@ footer a:hover {
   }
 
   .PopularTitle i {
- 
   }
 
   .PopularTitle h4 {
@@ -619,8 +618,11 @@ footer a:hover {
   .columnHotelFlex {
     flex-direction: row;
     justify-content: space-evenly;
+    max-width: 918px;
+    width: 94%;
     height: auto;
-    margin: auto 0 48px 0px;
+    margin-top: 32px;
+    gap: 15px;
   }
 
   .PopularHotelflex {
@@ -634,24 +636,30 @@ footer a:hover {
   }
 
   .homePopular img {
-    width: 100%;
-    max-width: 96px;
+    width: 42%;
+    max-width: 106px;
+  }
+
+  .textPopular h3,
+  .textPopular p,
+  .popularIcon {
+    margin-left: 2px;
+    margin-right: 3px;
   }
 
   .activity {
     margin: auto;
     max-width: 883px;
     padding-bottom: 61px;
-    width: 98%;
-    box-sizing: border-box;
+    width: 91%;
   }
 
   .activity h5 {
-    margin: 70px 400px 38.47px 12px;
+    margin: 70px 0px 34px 12px;
   }
 
   .activityFlex {
-    width: 182px;
+    max-width: 182px;
     height: 267px;
   }
 
@@ -674,12 +682,11 @@ footer a:hover {
 /*Responsive Mobile */
 
 @media screen and (max-width: 768px) {
-
   .navLogo {
     display: block;
     padding-top: 21px;
     text-align: center;
-    padding:21px 0px 31px 0px;
+    padding: 21px 0px 31px 0px;
   }
 
   .nav-main {
@@ -782,12 +789,13 @@ footer a:hover {
     max-width: fit-content;
     flex-direction: column-reverse;
     gap: 12px;
+    padding: 0%;
   }
 
   .home {
     background-color: white;
     width: 100%;
-    height: 1410px;
+    height: 1380px;
   }
 
   .home h2 {
@@ -797,9 +805,8 @@ footer a:hover {
   .hotel {
     width: 90%;
     max-width: 735px;
-    height: 199px;
+    height: 194px;
     margin: auto;
-    flex-basis: 90%;
   }
 
   .hotel img {
@@ -812,6 +819,7 @@ footer a:hover {
 
   .PopularHotelflex {
     max-width: 735px;
+    height: 139px;
     width: 100%;
     margin: auto;
     justify-content: flex-start;
@@ -824,7 +832,7 @@ footer a:hover {
 
   .homePopular {
     border-radius: 0%;
-    height: 615px;
+    height: 582px;
     width: 100%;
   }
 
@@ -832,23 +840,25 @@ footer a:hover {
     width: 90%;
     flex-direction: column;
     margin: auto;
-    margin-top: 0px;
-    height:500px;
+    margin-top: 8px;
+    height: 442px;
   }
 
-  
+  .textPopular {
+    margin: 0px 8px;
+  }
+
   .PopularTitle {
     margin: 28px 0px 24px 0px;
   }
 
-.PopularTitle h4  {
-  margin: 0px 0px 0px 20px;
-}
+  .PopularTitle h4 {
+    margin: 0px 0px 0px 20px;
+  }
 
   .PopularTitle i {
     margin-right: 0%;
   }
-
 
   .activity {
     display: flex;
@@ -862,15 +872,16 @@ footer a:hover {
 
   .ActivityVignetteFlex {
     flex-direction: column;
-    height: 850px;
+    height: 830px;
     width: 100%;
     justify-content: space-around;
+    gap: 0px;
   }
 
   .activityFlex {
     max-width: 735px;
     width: 90%;
-     height: 190px;
+    height: 190px;
     margin: auto;
   }
 
@@ -881,7 +892,7 @@ footer a:hover {
   .activity h5 {
     text-align: start;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 10px 20px;
+    margin: 0px 0px 20px 20px;
   }
 
   .activity p {
@@ -897,6 +908,7 @@ footer a:hover {
     flex-wrap: wrap;
     height: auto;
     padding-left: 20px;
+    width: auto;
   }
 
   .footerFlex:nth-child(1) {
@@ -906,7 +918,6 @@ footer a:hover {
   footer h6 {
     margin-top: 40px;
   }
-
- }
+}
 
 /*Responsive Mobile */
