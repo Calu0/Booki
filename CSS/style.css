@@ -245,7 +245,7 @@ body {
 
 .hotel {
   max-width: 234px;
-  min-width: 187px;
+  min-width: 197px;
   width: 27%;
   height: 194px;
   background-color: #fff;
@@ -387,7 +387,8 @@ body {
 
 .homePopular img {
   max-width: 132px;
-  width: 36%;
+  min-width: 85px;
+  width: 100%;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
   border: 5px solid white;
@@ -403,12 +404,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-width: 142px;
+  max-width: 200px;
 }
 
 .textPopular p {
   font-size: 14px;
   font-weight: 400;
-  margin: 0px 0px 0px 15px;
+  margin: 0px 15px 0px 15px;
   flex: 1;
 }
 
@@ -608,9 +611,6 @@ footer a:hover {
     width: 96%;
   }
 
-  .PopularTitle i {
-  }
-
   .PopularTitle h4 {
     margin: 26px 0px 0px 40px;
   }
@@ -636,15 +636,22 @@ footer a:hover {
   }
 
   .homePopular img {
-    width: 42%;
+    width: 100%;
     max-width: 106px;
+    min-width: 65px;
   }
+
+  .textPopular {
+    min-width: 124px;
+    max-width: 200px;
+    width: 100%;
+}
 
   .textPopular h3,
   .textPopular p,
   .popularIcon {
-    margin-left: 2px;
-    margin-right: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .activity {
@@ -807,6 +814,7 @@ footer a:hover {
     max-width: 735px;
     height: 194px;
     margin: auto;
+    min-width: 100px;
   }
 
   .hotel img {
@@ -845,6 +853,7 @@ footer a:hover {
   }
 
   .textPopular {
+    min-width: 115px;
     margin: 0px 8px;
   }
 
