@@ -14,25 +14,25 @@
 </head>
 
 <body>
-  <main>
     <!-- En-tête -->
-    <header>
-      <div class="navLogo">
+    <header class="navLogo">
         <a href="#">
           <img src="images/logo/Booki.png" alt="logo" id="logo" />
         </a>
-
         <nav class="nav-main">
           <a href="#home" class="nav-home">Hébergements</a>
           <a href="#activity" class="nav-activity">Activités</a>
         </nav>
-      </div>
+      </header>
+    <!--FIN En-tête -->
+    <!--Titre-->
+    <main>
+    <section>
       <div id="title">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
       </div>
-      <nav>
-        <!--FIN En-tête -->
+    <!--FIN Titre-->       
         <!--Barre de recherche-->
         <form class="search-bar">
           <a href="https://www.google.com/maps/place/Marseille/@43.2769933,5.2683838,11.25z/data=!4m5!3m4!1s0x12c9bf4344da5333:0x40819a5fd970220!8m2!3d43.296482!4d5.36978"
@@ -46,7 +46,7 @@
           </button>
         </form>
         <!--FIN Barre de recherche-->
-        <!--Filtres-->
+        <!--Filtres-->        
         <div class="filtres">
           <p id="filtretitle">Filtres</p>
           <button class="filtresAttribut">
@@ -70,9 +70,9 @@
           <span><i class="fa-solid fa-info"></i></span>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-      </nav>
+      </section>
       <!--FIN Filtres-->
-    </header>
+
 
     <!--Premier conteneur principal: "Hébergement à Marseille"-->
     <div class="homePopularFlex">
@@ -295,6 +295,7 @@
         </a>
       </div>
     </section>
+  </main>
     <!--FIN Troisième section: "Activités à Marseille"-->
 
     <!-- Pied de page -->
@@ -325,7 +326,6 @@
       </div>
     </footer>
     <!--FIN Pied de page -->
-  </main>
 </body>
 
 </html>
