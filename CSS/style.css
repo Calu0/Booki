@@ -188,6 +188,7 @@ body {
   margin: 38px 0px 39px 32px;
   align-items: center;
 }
+
 .info span {
   border: 1px solid #d9d9d9;
   border-radius: 100%;
@@ -496,6 +497,10 @@ footer {
   background-color: #f2f2f2;
   margin: 61px 26px 0px 26px;
   width: auto;
+}
+
+.about {
+  list-style-type: none;
 }
 
 .footerFlex {
